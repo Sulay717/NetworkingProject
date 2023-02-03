@@ -6,7 +6,7 @@ server.listen()
 
 while True:
     (clientConnection,clientaddress) = server.accept()
-    data = "Connected to server"
+    data = b'Hello World'
 
     clientConnection.send(data)
 
